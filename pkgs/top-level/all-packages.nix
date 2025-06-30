@@ -741,6 +741,8 @@ with pkgs;
 
   fetchPypiLegacy = callPackage ../build-support/fetchpypilegacy { };
 
+  jib-cli = callPackage ../build-support/jib-cli { };
+
   resolveMirrorURLs =
     { url }:
     fetchurl {
